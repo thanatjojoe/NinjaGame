@@ -6,7 +6,7 @@ using UnityEngine;
 public class DayNightCycle : MonoBehaviour
 {
     public List<Difficult> difficults;
-    [SerializeField] private int dayCount = 1;
+    private int dayCount = 1;
     [SerializeField] private Light sun;
 
     [SerializeField, Range(0, 24)] private float timeOfDay;
@@ -23,13 +23,19 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] private Gradient sunColor;
 
 
+    private void Start()
+    {
+        GameManager.instance.ChangeDay();
+    }
+
     private void Update()
     {
+        dayCount = GameManager.instance.DayCount;
         timeOfDay += Time.deltaTime * sunRotationSpeed;
         if (timeOfDay > 24)
         {
             timeOfDay = 0f;
-            dayCount += 1;
+            
         }
         UpdateRotateSpeed();
         UpdateLighting();
@@ -62,9 +68,15 @@ public class DayNightCycle : MonoBehaviour
     private void UpdateRotateSpeed()
     {
         ChangeDifficult();
-        if (timeOfDay < 6)
+        if (timeOfDay < 5)
         {
             sunRotationSpeed = nightSpeed;
+        }
+        else if (timeOfDay < 5.1f)
+        {
+            GameManager.instance.DayCount += 1;
+            GameManager.instance.ChangeDay();
+            timeOfDay = 5.11f;
         }
         else if (timeOfDay < 15)
         {

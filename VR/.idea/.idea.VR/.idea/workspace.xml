@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/New Terrain 1.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/New Terrain 1.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_13ecfd11-8b63-4a5e-bb40-dc52b2b05853.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_13ecfd11-8b63-4a5e-bb40-dc52b2b05853.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_196eab54-94e7-4dd9-97ea-3469d442651e.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_196eab54-94e7-4dd9-97ea-3469d442651e.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_323429ab-fdb9-49a6-967b-28a9b6a21603.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_323429ab-fdb9-49a6-967b-28a9b6a21603.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_3f6bf6a9-783c-425b-bf3f-502c687ba46d.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_3f6bf6a9-783c-425b-bf3f-502c687ba46d.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_7380817f-1bf5-4169-b0ef-62b68f89749b.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_7380817f-1bf5-4169-b0ef-62b68f89749b.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_97fb0ea4-a078-4c9a-8794-cfc9e98b78fa.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_97fb0ea4-a078-4c9a-8794-cfc9e98b78fa.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_d1f2fcac-7f57-4853-ac74-5b690528653a.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_d1f2fcac-7f57-4853-ac74-5b690528653a.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_ec69e6ca-a9f7-4f70-9578-aa0bbf531cc4.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Terriam/TerrainData_ec69e6ca-a9f7-4f70-9578-aa0bbf531cc4.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/ModelPrefeb/FX 1/FX_Prefabs/Fire_FX.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/ModelPrefeb/FX 1/FX_Prefabs/Fire_FX.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/XRGeneralSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +16,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.oculus@3.2.3/Runtime/OculusLoader.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Editor/ShaderGUI/Shaders/LitShader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.oculus@3.2.3/Runtime/OculusLoader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
