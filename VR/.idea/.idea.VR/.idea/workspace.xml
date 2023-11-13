@@ -5,6 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fire.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fire.cs.meta" beforeDir="false" />
@@ -2848,6 +2849,55 @@
       <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
+=======
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Moss.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Moss.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Snow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Snow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_02.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_03.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_03.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_04.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_04.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Base_LOD_01_Brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Base_LOD_01_Brown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Base_LOD_01_Red.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Base_LOD_01_Red.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Base_LOD_01_Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Base_LOD_01_Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Pine_LOD_01_BrightGreen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Pine_LOD_01_BrightGreen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Pine_LOD_01_Brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Pine_LOD_01_Brown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Pine_LOD_01_Snow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Pine_LOD_01_Snow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Willow_LOD_01_Pink.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Willow_LOD_01_Pink.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Willow_LOD_01_Swamp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Willow_LOD_01_Swamp.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Willow_LOD_01_Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/Alternates/PolygonNature_Leaves_Willow_LOD_01_Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Base_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Base_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Fern_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Fern_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_FlowerBush_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_FlowerBush_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Pine_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Pine_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Undergrowth_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Undergrowth_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Willow_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Leaves_Willow_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Tree_Dead_Branch_LOD_01.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/LODS/PolygonNature_Tree_Dead_Branch_LOD_01.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base_Brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base_Brown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base_Pink.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base_Pink.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base_Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Base_Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine_BrightGreen.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine_BrightGreen.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine_Brown.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine_Brown.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine_Snow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Pine_Snow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow_Pink.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow_Pink.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow_Swamp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow_Swamp.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow_Yellow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Leaves/PolygonNature_Leaves_Willow_Yellow.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Birch_Trunk.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Birch_Trunk.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Fern.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Fern.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_FlowerBush.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_FlowerBush.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Tree_Dead.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Tree_Dead.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Undergrowth.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Undergrowth.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Vines.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/PolygonNature_Vines.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/Skydome_Classic_Trees.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/Skydome_Classic_Trees.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/Skydome_Day.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Misc/Skydome_Day.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Plants.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Plants.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree_Trunk.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree_Trunk.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree_TrunkDead.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree_TrunkDead.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water_Swamp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water_Swamp.mat" afterDir="false" />
+>>>>>>> parent of 59823da (Day/Night System & Fire)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2911,6 +2961,7 @@
       <workItem from="1698991721383" duration="45000" />
       <workItem from="1698999730967" duration="1193000" />
       <workItem from="1699274949908" duration="4000" />
+<<<<<<< HEAD
       <workItem from="1699295463081" duration="5988000" />
       <workItem from="1699516837380" duration="686000" />
       <workItem from="1699517568799" duration="1834000" />
@@ -2918,6 +2969,8 @@
       <workItem from="1699759430129" duration="4289000" />
       <workItem from="1699856165762" duration="356000" />
       <workItem from="1699862655232" duration="657000" />
+=======
+>>>>>>> parent of 59823da (Day/Night System & Fire)
     </task>
     <servers />
   </component>
