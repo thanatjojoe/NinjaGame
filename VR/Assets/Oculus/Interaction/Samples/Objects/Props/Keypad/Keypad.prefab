@@ -23,6 +23,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 168775997839364126}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.2588191, y: 0, z: 0, w: 0.9659258}
   m_LocalPosition: {x: -0.17570001, y: 0.8815, z: 0.37199998}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -39,7 +40,6 @@ Transform:
   - {fileID: 3510283423895374942}
   - {fileID: 3510283422677854777}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 30, y: 0, z: 0}
 --- !u!1 &168775999048152103
 GameObject:
@@ -72,7 +72,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 168775997839364125}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -218,6 +217,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -281,6 +281,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283423812832903 stripped
 Transform:
@@ -293,6 +296,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -356,6 +360,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283423901125202 stripped
 Transform:
@@ -368,6 +375,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -431,6 +439,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283423895374942 stripped
 Transform:
@@ -443,6 +454,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -506,6 +518,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283423293534211 stripped
 Transform:
@@ -518,6 +533,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -581,6 +597,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283422677854777 stripped
 Transform:
@@ -593,6 +612,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -656,6 +676,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283422549369581 stripped
 Transform:
@@ -668,6 +691,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -731,6 +755,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283422061921196 stripped
 Transform:
@@ -743,6 +770,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -806,6 +834,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &3510283422206679370 stripped
 Transform:
@@ -818,6 +849,7 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
+    serializedVersion: 3
     m_TransformParent: {fileID: 168775997839364125}
     m_Modifications:
     - target: {fileID: 3666093704642933930, guid: 9f717ba020826834a98daf42c0d358da,
@@ -881,6 +913,9 @@ PrefabInstance:
       value: KeypadButton
       objectReference: {fileID: 0}
     m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 9f717ba020826834a98daf42c0d358da, type: 3}
 --- !u!4 &4921466975050441382 stripped
 Transform:
