@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
 <<<<<<< HEAD
+<<<<<<< HEAD
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fire.cs" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Fire.cs.meta" beforeDir="false" />
@@ -2850,6 +2851,8 @@
       <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/VFXManager.asset" afterDir="false" />
 =======
+=======
+>>>>>>> parent of 59823dae (Day/Night System & Fire)
       <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Moss.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Moss.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Snow.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Snow.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_02.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Alternates/PolygonNature_Tree_02.mat" afterDir="false" />
@@ -2897,7 +2900,10 @@
       <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree_TrunkDead.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/PolygonNature_Tree_TrunkDead.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water.mat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water_Swamp.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/Materials/Water/PolygonNature_Water_Swamp.mat" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> parent of 59823da (Day/Night System & Fire)
+=======
+>>>>>>> parent of 59823dae (Day/Night System & Fire)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -2962,6 +2968,7 @@
       <workItem from="1698999730967" duration="1193000" />
       <workItem from="1699274949908" duration="4000" />
 <<<<<<< HEAD
+<<<<<<< HEAD
       <workItem from="1699295463081" duration="5988000" />
       <workItem from="1699516837380" duration="686000" />
       <workItem from="1699517568799" duration="1834000" />
@@ -2971,6 +2978,8 @@
       <workItem from="1699862655232" duration="657000" />
 =======
 >>>>>>> parent of 59823da (Day/Night System & Fire)
+=======
+>>>>>>> parent of 59823dae (Day/Night System & Fire)
     </task>
     <servers />
   </component>
