@@ -4,7 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="" />
+    <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonSamurai/Materials/PolygonSamurai_Character_Mat_Black.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/DayNightCycle.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/DayNightCycle.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Difficult.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Difficult.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Enemy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Enemy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Fire.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Fire.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/GameManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/GameManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/MeshDestroy.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/MeshDestroy.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/TimeManager.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/TimeManager.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/PlayWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
