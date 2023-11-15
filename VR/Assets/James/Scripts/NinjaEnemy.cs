@@ -1,16 +1,25 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
+using Random = UnityEngine.Random;
+
 
 public class NinjaEnemy : MonoBehaviour
 {
+    [Header("Detect")] 
     [SerializeField] private Transform detectTrans;
     [SerializeField] private float detectRadius;
     [SerializeField] private LayerMask playerLayer;
+    [SerializeField] private float lookAtSpeed = 10f;
+
+    [Header("Combat")] 
+    [SerializeField] private float attackDelay = 3f;
 
     private bool onAttack;
+    private bool onPlayer;
     
     private Rigidbody _rigidbody;
     private Animator _animator;
@@ -32,23 +41,48 @@ public class NinjaEnemy : MonoBehaviour
 
     private void Update()
     {
-        _agent.SetDestination(playerTransform.position);
+        
         AttackMode();
+        
     }
 
     private void AttackMode()
     {
-        Collider[] playerDetect = Physics.OverlapSphere(detectTrans.position, detectRadius, playerLayer);
+        if (onPlayer)
+        { 
+            _animator.SetBool("Run",false);
+            
+            Vector3 directionToPlayer = playerTransform.position - transform.position;
+            
+            Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
+            
+            transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, lookAtSpeed * Time.deltaTime);
+           
+            if (!onAttack)
+            {
+                StartCoroutine(Attack());
+            }
+        }
+        else
+        {
+            if (!onAttack)
+            {
+                _animator.SetBool("Run",true);
+                _agent.SetDestination(playerTransform.position);
+            }
+        }
+        /*Collider[] playerDetect = Physics.OverlapSphere(detectTrans.position, detectRadius, playerLayer);
         foreach (Collider player in playerDetect)
         {
             if (player.gameObject.CompareTag("Player"))
             {
+                _animator.SetBool("Run",false);
                 if (!onAttack)
                 {
                     StartCoroutine(Attack());
                 }
             }
-        }
+        }*/
     }
 
     private void OnCollisionEnter(Collision collision)
@@ -63,6 +97,7 @@ public class NinjaEnemy : MonoBehaviour
     {
         _rigidbody.isKinematic = false;
         _animator.enabled = false;
+        _agent.enabled = false;
         StartCoroutine(DestoryTime());
     }
 
@@ -75,13 +110,31 @@ public class NinjaEnemy : MonoBehaviour
     IEnumerator Attack()
     {
         onAttack = true;
+        int rand = Random.Range(1, 3);
+        _animator.SetTrigger($"Attack{rand}");
         Debug.Log("Attack!!!");
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(attackDelay);
         onAttack = false;
     }
 
-    private void OnDrawGizmos()
+    /*private void OnDrawGizmos()
     {
         Gizmos.DrawWireSphere(detectTrans.position,detectRadius);
+    }*/
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            onPlayer = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            onPlayer = false;
+        }
     }
 }
