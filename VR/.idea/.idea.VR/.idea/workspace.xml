@@ -6,13 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/Enemy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Animation/Enemy/Enemy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/idle.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Animation/Enemy/idle.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Nodachi_Animset/AnimatorContrl/attack_03.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/Nodachi_Animset/AnimatorContrl/attack_03.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/NinjaEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/NinjaEnemy.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +72,7 @@
       <workItem from="1699274949908" duration="4000" />
       <workItem from="1699295463081" duration="5988000" />
       <workItem from="1699980411718" duration="2892000" />
-      <workItem from="1700051793309" duration="6684000" />
+      <workItem from="1700051793309" duration="6685000" />
     </task>
     <servers />
   </component>
