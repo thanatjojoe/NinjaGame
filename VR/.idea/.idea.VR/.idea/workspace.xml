@@ -6,6 +6,32 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/Enemy.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/Enemy.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/combo_01_1_inplace.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/combo_01_1_inplace.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/combo_01_2_inplace.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/combo_01_2_inplace.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/combo_02_1_inplace.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/combo_02_1_inplace.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/idle.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/idle.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/run_front_inplace.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Enemy/run_front_inplace.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Archer Animations/Materials/ArcherFloor.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Archer Animations/Materials/ArcherFloor.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Archer Animations/Materials/ArcherMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Archer Animations/Materials/ArcherMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Melee Warrior Animations/Materials/MeleeWarriorFloorMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Melee Warrior Animations/Materials/MeleeWarriorFloorMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Melee Warrior Animations/Materials/MeleeWarriorMaterial.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/Kevin Iglesias/Melee Warrior Animations/Materials/MeleeWarriorMaterial.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/Nodachi_Animset/Materials/Dome Material.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/Nodachi_Animset/Materials/Dome Material.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Prefeb/Enemy/EnemyNinja.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Prefeb/Enemy/EnemyNinja.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/NinjaEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/NinjaEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/RB_Sword_Pack/Materials/RB_Sword_Pack.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/RB_Sword_Pack/Materials/RB_Sword_Pack.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/RB_Sword_Pack/Materials/Wall.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/RB_Sword_Pack/Materials/Wall.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/QualitySettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,6 +99,7 @@
       <workItem from="1699295463081" duration="5988000" />
       <workItem from="1699980411718" duration="2892000" />
       <workItem from="1700051793309" duration="6685000" />
+      <workItem from="1700191352908" duration="10600000" />
     </task>
     <servers />
   </component>

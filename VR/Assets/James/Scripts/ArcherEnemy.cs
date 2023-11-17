@@ -1,15 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
-using Random = UnityEngine.Random;
 
-
-public class NinjaEnemy : MonoBehaviour
+public class ArcherEnemy : MonoBehaviour
 {
-    [Header("Detect")] 
+   [Header("Detect")] 
     [SerializeField] private SphereCollider detectCollider;
     [SerializeField] private float detectRadius;
     [SerializeField] private LayerMask playerLayer;
@@ -17,6 +13,9 @@ public class NinjaEnemy : MonoBehaviour
 
     [Header("Combat")]
     [SerializeField] private float attackDelay = 3f;
+    [SerializeField] private GameObject arrowObject;
+    [SerializeField] private Transform shootPoint;
+    [SerializeField] private Transform arrowPrefab;
 
     private bool onAttack;
     private bool onPlayer;
@@ -36,26 +35,27 @@ public class NinjaEnemy : MonoBehaviour
     }
     private void Update()
     {
-        
+        detectCollider.radius = detectRadius;
+        _agent.stoppingDistance = detectRadius;
         AttackMode();
+        
         
 
     }
 
     private void AttackMode()
     {
-        detectCollider.radius = detectRadius;
         
         if (onPlayer)
         { 
             _animator.SetBool("Run",false);
-            
+            _agent.isStopped = true;
             Vector3 directionToPlayer = playerTransform.position - transform.position;
             
             Quaternion lookRotation = Quaternion.LookRotation(directionToPlayer);
             
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, lookAtSpeed * Time.deltaTime);
-           
+            
             if (!onAttack)
             {
                 StartCoroutine(Attack());
@@ -63,10 +63,16 @@ public class NinjaEnemy : MonoBehaviour
         }
         else
         {
+            
             if (!onAttack)
             {
+                _agent.isStopped = false;
                 _animator.SetBool("Run",true);
                 _agent.SetDestination(playerTransform.position);
+            }
+            else
+            {
+                _agent.isStopped = true;
             }
         }
     }
@@ -96,18 +102,25 @@ public class NinjaEnemy : MonoBehaviour
     IEnumerator Attack()
     {
         onAttack = true;
-        int rand = Random.Range(1, 3);
-        _animator.SetTrigger($"Attack{rand}");
-        //Debug.Log("Attack!!!");
+        _animator.SetTrigger($"Hold");
+        ArrowAppear();
+        yield return new WaitForSeconds(attackDelay);
+        _animator.SetTrigger("Release");
+        ShootArrow();
         yield return new WaitForSeconds(attackDelay);
         onAttack = false;
     }
 
-    /*private void OnDrawGizmos()
+    public void ArrowAppear()
     {
-        Gizmos.DrawWireSphere(detectTrans.position,detectRadius);
-    }*/
+        arrowObject.SetActive(true);
+    }
 
+    public void ShootArrow()
+    {
+        arrowObject.SetActive(false);
+        Instantiate(arrowPrefab, shootPoint.position, shootPoint.rotation);
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
