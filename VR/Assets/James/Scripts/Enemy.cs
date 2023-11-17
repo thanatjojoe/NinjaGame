@@ -20,6 +20,4 @@ public class Enemy : MonoBehaviour
             _meshDestroy.enabled = false;
         }
     }
-
-    
 }

@@ -115,6 +115,7 @@ MonoBehaviour:
   jumpForce: 10
   rigidbody: {fileID: 3835156962548111580}
   player: {fileID: 3006008561134797571, guid: 7f7fb1f0bb9ab9c4ebddc56f967991b8, type: 3}
+  enemyDmg: 10
 --- !u!54 &3835156962548111580
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -130,4 +131,4 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
