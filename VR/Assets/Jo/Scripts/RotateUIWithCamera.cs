@@ -2,16 +2,16 @@ using UnityEngine;
 
 public class RotateUIWithCamera : MonoBehaviour
 {
-    private Transform mainCameraTransform; // เก็บ Transform ของ Main Camera
-    private RectTransform canvasRectTransform; // เก็บ RectTransform ของ Canvas
-    public float distanceFromCamera = 1f; // ระยะห่างจาก Main Camera
+    private Transform mainCameraTransform; 
+    private RectTransform canvasRectTransform; 
+    public float distanceFromCamera = 1f; 
 
     void Start()
     {
-        // หา Main Camera ใน Scene
+       
         mainCameraTransform = Camera.main.transform;
 
-        // หา RectTransform ของ Canvas
+        
         canvasRectTransform = GetComponent<RectTransform>();
     }
 

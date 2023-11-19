@@ -8,7 +8,7 @@ public class Player : MonoBehaviour
     public static event System.Action OnCollisionWithEnemy;
     public static int playerHP = 100;
 
-    public Image healthImage; // ลาก Image จาก Canvas เพื่อเชื่อมโยง
+    public Image healthImage; 
 
     void Update()
     {
@@ -19,7 +19,6 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.tag == "Enemy")
         {
-            // คำนวณดาเมจ
             OnCollisionWithEnemy?.Invoke();
             Debug.Log(playerHP);
         }
@@ -29,7 +28,7 @@ public class Player : MonoBehaviour
     {
         if (healthImage != null)
         {
-            // คำนวณเปอร์เซ็นต์ของเลือดที่เหลือ
+           
             float healthPercentage = (float)playerHP / 100f;
 
             // ปรับสีของ Image ให้มืดลงเมื่อเลือดน้อยลง

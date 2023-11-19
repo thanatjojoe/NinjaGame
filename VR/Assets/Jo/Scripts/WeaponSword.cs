@@ -4,8 +4,16 @@ using UnityEngine;
 
 public class WeaponSword : MonoBehaviour
 {
-    public float damageMultiplier = 10f; // ตัวคูณสำหรับการคำนวณดาเมจ
+    public static float damageMultiplier = 10f; // ตัวคูณสำหรับการคำนวณดาเมจ
+    public static event System.Action EnemyDead;
 
+    
+    
+
+    void start()
+    {
+       
+    }
     private void Update()
     {
         
@@ -23,7 +31,7 @@ public class WeaponSword : MonoBehaviour
 
             // แสดง Debug Log
             Debug.Log("Damage: " + damage);
-            if (damage > 2.5)
+            if (damage > 2)
             {
                 Destroy(other.gameObject);
             }
