@@ -1,5 +1,6 @@
 using System.Collections;
 using UnityEngine;
+using System;
 
 public class Enemy1 : MonoBehaviour
 {
@@ -7,6 +8,7 @@ public class Enemy1 : MonoBehaviour
     public float jumpForce = 50f;
     public Rigidbody rigidbody;
     public Transform player; 
+    private int enemyDmg = 5;
 
     void Start()
     {
@@ -26,33 +28,31 @@ public class Enemy1 : MonoBehaviour
             Vector3 directionToPlayer = player.position - transform.position;
 
             // หันทิศทาง
-            transform.forward = directionToPlayer.normalized;
-
-           
-           
+            transform.forward = directionToPlayer.normalized; 
             
-                // เคลื่อนที่ไปข้างหน้า
-                transform.position += transform.forward * speed * Time.deltaTime;
-            
+            // เคลื่อนที่ไปข้างหน้า
+            transform.position += transform.forward * speed * Time.deltaTime;
         }
     }
-
     void Bounce()
     {
         // กระเด็น
         rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         rigidbody.AddForce(Vector3.forward * jumpForce, ForceMode.Impulse);
     }
-
-    void OnCollisionEnter(Collision other)
+   
+    void damageToPlayer()
     {
-        if (other.gameObject.tag == "Weapon")
-        {
-            Destroy(gameObject);
-        }
-        if (other.gameObject.tag == "Player")
-        {
-            Bounce();
-        }
+        Player.playerHP = Player.playerHP - enemyDmg;
+    }
+
+    private void OnEnable()
+    {
+        Player.OnCollisionWithEnemy += damageToPlayer;
+    }
+    private void OnDisable()
+    {
+        Bounce();
+        Player.OnCollisionWithEnemy -= damageToPlayer;
     }
 }
