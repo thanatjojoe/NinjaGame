@@ -24,6 +24,7 @@ public class ArcherEnemy : MonoBehaviour
     private Animator _animator;
     private NavMeshAgent _agent;
     private Transform playerTransform;
+    private GameManager _gameManager;
     
     private void Awake()
     {
@@ -32,15 +33,16 @@ public class ArcherEnemy : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
         detectCollider = GetComponent<SphereCollider>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        _gameManager    = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
     private void Update()
     {
         detectCollider.radius = detectRadius;
         _agent.stoppingDistance = detectRadius;
-        AttackMode();
-        
-        
-
+        if (!GameManager.instance.IsGameOver)
+        {
+            AttackMode();
+        }
     }
 
     private void AttackMode()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using Febucci.UI;
@@ -11,6 +12,23 @@ public class GameManager : MonoBehaviour
     [SerializeField] private int dayCount = 1;
     [SerializeField] private TextAnimator_TMP dayText;
 
+    private bool isGameOver;
+
+    private void Start()
+    {
+        //test game over
+        //GameOver();
+    }
+
+    public bool IsGameOver
+    {
+        get { return isGameOver; }
+    }
+
+    public void GameOver()
+    {
+        isGameOver = true;
+    }
     public int DayCount
     {
         get { return dayCount; }
@@ -27,13 +45,13 @@ public class GameManager : MonoBehaviour
 
     public void ChangeDay()
     {
-        StartCoroutine(DayTextChange());
+        dayText.SetText($"<wave a=0.1>DAY {dayCount}");
     }
 
     IEnumerator DayTextChange()
     {
-        dayText.SetText($"<fade>DAY {dayCount}</fade>");
+        dayText.SetText($"<wave a=0.1>DAY {dayCount}");
         yield return new WaitForSeconds(5);
-        dayText.SetText("");
+        dayText.SetText($"DAY {dayCount}");
     }
 }

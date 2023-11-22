@@ -36,8 +36,12 @@ public class NinjaEnemy : MonoBehaviour
     }
     private void Update()
     {
+
+        if (!GameManager.instance.IsGameOver)
+        {
+            AttackMode();
+        }
         
-        AttackMode();
         
 
     }
