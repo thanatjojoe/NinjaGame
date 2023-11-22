@@ -28,6 +28,14 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         isGameOver = true;
+        StartCoroutine(GameIsOver());
+    }
+
+    IEnumerator GameIsOver()
+    {
+        //show game over canvas
+        yield return new WaitForSeconds(5f);
+        Debug.Log("Game Over");
     }
     public int DayCount
     {
