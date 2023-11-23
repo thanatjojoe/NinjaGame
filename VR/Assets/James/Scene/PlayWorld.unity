@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.1273167, g: 0.13414648, b: 0.12107788, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414668, b: 0.12107805, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13846,18 +13846,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 953064953}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1687925727 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5088807337382266918, guid: 6560ce8e5fb778443824ba61364a24eb,
-    type: 3}
-  m_PrefabInstance: {fileID: 5088807336189779815}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a2fa91feb0066144e883dd2ff122aad5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1707503910
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14901,6 +14889,25 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 466998319}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1858290689 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8102054140174257827, guid: 2420e3c85cfe81b48b666be173bd6b83,
+    type: 3}
+  m_PrefabInstance: {fileID: 318052163677391832}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1858290695
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1858290689}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.2738256, y: 1.7830861, z: 0.03538366}
+  m_Center: {x: 0.005470828, y: 0.6778415, z: -0.004728307}
 --- !u!1001 &1867433696
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14984,7 +14991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0ca732b63e569438f9e239aed85494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ninjaEnemy: {fileID: 1687925727}
 --- !u!65 &1885573426
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -16825,6 +16831,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SekeletonTank
       objectReference: {fileID: 0}
+    - target: {fileID: 318052161793715649, guid: 2420e3c85cfe81b48b666be173bd6b83,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 318052161794061553, guid: 2420e3c85cfe81b48b666be173bd6b83,
         type: 3}
       propertyPath: m_RootOrder
@@ -16833,7 +16844,7 @@ PrefabInstance:
     - target: {fileID: 318052161794061553, guid: 2420e3c85cfe81b48b666be173bd6b83,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.78
+      value: 9.85
       objectReference: {fileID: 0}
     - target: {fileID: 318052161794061553, guid: 2420e3c85cfe81b48b666be173bd6b83,
         type: 3}
@@ -16843,7 +16854,7 @@ PrefabInstance:
     - target: {fileID: 318052161794061553, guid: 2420e3c85cfe81b48b666be173bd6b83,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -32.91
+      value: -2.41
       objectReference: {fileID: 0}
     - target: {fileID: 318052161794061553, guid: 2420e3c85cfe81b48b666be173bd6b83,
         type: 3}
@@ -16880,6 +16891,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 318052161794061558, guid: 2420e3c85cfe81b48b666be173bd6b83,
+        type: 3}
+      propertyPath: detectRadius
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 8102054140174257827, guid: 2420e3c85cfe81b48b666be173bd6b83,
+        type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2420e3c85cfe81b48b666be173bd6b83, type: 3}
 --- !u!1001 &5088807336189779815
@@ -16908,6 +16929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: SkeletonWarrior
+      objectReference: {fileID: 0}
+    - target: {fileID: 5088807337389549691, guid: 6560ce8e5fb778443824ba61364a24eb,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5088807337389745543, guid: 6560ce8e5fb778443824ba61364a24eb,
         type: 3}
@@ -17107,6 +17133,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SkeletonArcher
       objectReference: {fileID: 0}
+    - target: {fileID: 8667240129304965228, guid: 955325284557ebf4e978d66b3c5273ed,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8667240129305190368, guid: 955325284557ebf4e978d66b3c5273ed,
         type: 3}
       propertyPath: m_RootOrder
@@ -17115,7 +17146,7 @@ PrefabInstance:
     - target: {fileID: 8667240129305190368, guid: 955325284557ebf4e978d66b3c5273ed,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 44.22
+      value: 16.34
       objectReference: {fileID: 0}
     - target: {fileID: 8667240129305190368, guid: 955325284557ebf4e978d66b3c5273ed,
         type: 3}
@@ -17125,7 +17156,7 @@ PrefabInstance:
     - target: {fileID: 8667240129305190368, guid: 955325284557ebf4e978d66b3c5273ed,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -16.93
+      value: -2.25
       objectReference: {fileID: 0}
     - target: {fileID: 8667240129305190368, guid: 955325284557ebf4e978d66b3c5273ed,
         type: 3}
