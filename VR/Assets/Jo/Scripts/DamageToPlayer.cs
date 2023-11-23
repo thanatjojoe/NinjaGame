@@ -5,8 +5,7 @@ using UnityEngine;
 public class DamageToPlayer : MonoBehaviour
 {
     private int enemyDmg = 30;
-
-    public NinjaEnemy _ninjaEnemy;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -18,6 +17,8 @@ public class DamageToPlayer : MonoBehaviour
     {
         
     }
+    
+    
     void damageToPlayer()
     {
         Player.playerHP = Player.playerHP - enemyDmg;
@@ -25,10 +26,8 @@ public class DamageToPlayer : MonoBehaviour
 
     private void OnEnable()
     {
-        if (_ninjaEnemy.onAttack == true)
-        {
-            Player.OnCollisionWithEnemy += damageToPlayer;
-        }
+        Player.OnCollisionWithEnemy += damageToPlayer;
+        
     }
     private void OnDisable()
     {

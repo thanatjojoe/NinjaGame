@@ -1395,7 +1395,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5088807337389549691}
-  m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
+  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
   m_LocalPosition: {x: 0, y: 0, z: 3.9360604}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1460,6 +1460,7 @@ MonoBehaviour:
     m_Bits: 8
   lookAtSpeed: 10
   attackDelay: 1.5
+  onAttack: 0
 --- !u!136 &5088807337382266919
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -4882,7 +4883,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 132852, guid: ac53f9d05b915884ab3ce6d0a7113315, type: 3}
       propertyPath: m_Name
-      value: SM_Wep_Ninjato_01 (1)
+      value: Sword
+      objectReference: {fileID: 0}
+    - target: {fileID: 132852, guid: ac53f9d05b915884ab3ce6d0a7113315, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
       objectReference: {fileID: 0}
     - target: {fileID: 431322, guid: ac53f9d05b915884ab3ce6d0a7113315, type: 3}
       propertyPath: m_RootOrder
@@ -4948,3 +4953,34 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 5088807337301790708}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5088807337301657856 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132852, guid: ac53f9d05b915884ab3ce6d0a7113315,
+    type: 3}
+  m_PrefabInstance: {fileID: 5088807337301790708}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &1885573426
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088807337301657856}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.07952923, y: 1.2729759, z: 0.12100227}
+  m_Center: {x: 0.00000011119731, y: 0.4332198, z: 0.0000019130744}
+--- !u!114 &1885573425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088807337301657856}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1e0ca732b63e569438f9e239aed85494, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
