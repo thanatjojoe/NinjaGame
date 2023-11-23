@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,7 +9,13 @@ public class Player : MonoBehaviour
     public static event System.Action OnCollisionWithEnemy;
     public static int playerHP = 100;
 
-    public Image healthImage; 
+    public Image healthImage;
+    private GameManager _gameManager;
+
+    private void Start()
+    {
+        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+    }
 
     void Update()
     {
@@ -17,10 +24,19 @@ public class Player : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Enemy")
+        if (other.gameObject.tag == "Weapon")
         {
-            OnCollisionWithEnemy?.Invoke();
+            //OnCollisionWithEnemy?.Invoke();
+            playerHP -= 30;
             Debug.Log(playerHP);
+        }
+    }
+
+    void UpdateHp()
+    {
+        if (playerHP < 0)
+        {
+            _gameManager.GameOver();
         }
     }
 

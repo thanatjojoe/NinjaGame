@@ -6,17 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/RangeEnemy/RnageEnemy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Animation/RangeEnemy/RnageEnemy.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Tank/1H@Walk01.fbx.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Animation/Tank/1H@Walk01.fbx.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Animation/Tank/TankEnemy.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Animation/Tank/TankEnemy.controller" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld/NavMesh.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/Enemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/Enemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/New Terrain.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/New Terrain.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TerrainData_0dccc285-3246-46f8-83e6-0bf420b52780.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TerrainData_0dccc285-3246-46f8-83e6-0bf420b52780.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TerrainData_58a9e2d7-57b3-43e2-8370-77e6143b672e.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TerrainData_58a9e2d7-57b3-43e2-8370-77e6143b672e.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/Scripts/Player.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/Scripts/Player.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,9 +16,9 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.oculus@3.2.3/Runtime/OculusLoader.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Jo/Scripts/DamageToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@12.1.10/Editor/ShaderGUI/Shaders/LitShader.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Jo/Scripts/DamageToPlayer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.xr.oculus@3.2.3/Runtime/OculusLoader.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -46,9 +38,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="rider.run.widget.enabled.cache" value="false" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
@@ -88,6 +81,7 @@
       <workItem from="1700304423721" duration="643000" />
       <workItem from="1700410648249" duration="1203000" />
       <workItem from="1700627295888" duration="3029000" />
+      <workItem from="1700740821418" duration="341000" />
     </task>
     <servers />
   </component>

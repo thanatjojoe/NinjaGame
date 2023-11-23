@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414668, b: 0.12107805, a: 1}
+  m_IndirectSpecularColor: {r: 0.1273167, g: 0.13414648, b: 0.12107788, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13562,7 +13562,7 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1653065117}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.18
   m_Height: 4
@@ -16897,7 +16897,7 @@ PrefabInstance:
     - target: {fileID: 5088807337301657856, guid: 6560ce8e5fb778443824ba61364a24eb,
         type: 3}
       propertyPath: m_TagString
-      value: Enemy
+      value: Weapon
       objectReference: {fileID: 0}
     - target: {fileID: 5088807337382266970, guid: 6560ce8e5fb778443824ba61364a24eb,
         type: 3}
