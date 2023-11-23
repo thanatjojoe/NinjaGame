@@ -35,7 +35,7 @@ public class Spawner : MonoBehaviour
         float u = Random.Range(0f, 1f);
         float v = Random.Range(0f, 1f);
 
-        Vector3 randomPoint = collider.bounds.min + new Vector3(u * collider.bounds.size.x, 5f, v * collider.bounds.size.z);
+        Vector3 randomPoint = collider.bounds.min + new Vector3(u * collider.bounds.size.x, 0f, v * collider.bounds.size.z);
 
         return randomPoint;
     }

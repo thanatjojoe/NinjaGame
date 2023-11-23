@@ -6,6 +6,8 @@ TagManager:
   tags:
   - HitObject
   - Enemy
+  - Weapon
+  - WeaponPlayer
   layers:
   - Default
   - TransparentFX
