@@ -5,10 +5,6 @@ using UnityEngine;
 public class WeaponSword : MonoBehaviour
 {
     public static float damageMultiplier = 10f; // ตัวคูณสำหรับการคำนวณดาเมจ
-    public static event System.Action EnemyDead;
-
-    
-    
 
     void start()
     {
@@ -17,11 +13,8 @@ public class WeaponSword : MonoBehaviour
     private void Update()
     {
         
-           
-           
-        
     }
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {
