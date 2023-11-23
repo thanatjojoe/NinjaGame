@@ -18,7 +18,7 @@ public class NinjaEnemy : MonoBehaviour
     [Header("Combat")]
     [SerializeField] private float attackDelay = 3f;
 
-    private bool onAttack;
+    public bool onAttack;
     private bool onPlayer;
     
     private Rigidbody _rigidbody;

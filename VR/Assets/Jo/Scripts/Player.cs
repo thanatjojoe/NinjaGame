@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
         UpdateHealthImage();
     }
 
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {
