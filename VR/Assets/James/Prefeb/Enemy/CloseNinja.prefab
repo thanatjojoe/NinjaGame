@@ -2004,6 +2004,7 @@ MonoBehaviour:
     m_Bits: 8
   lookAtSpeed: 10
   attackDelay: 1.5
+  onAttack: 0
 --- !u!54 &7305083866677772652
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4694,6 +4695,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SM_Wep_Ninjato_01
       objectReference: {fileID: 0}
+    - target: {fileID: 132852, guid: ac53f9d05b915884ab3ce6d0a7113315, type: 3}
+      propertyPath: m_TagString
+      value: Weapon
+      objectReference: {fileID: 0}
     - target: {fileID: 431322, guid: ac53f9d05b915884ab3ce6d0a7113315, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -4746,3 +4751,22 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 7219843354929674617}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &7219843354929807245 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 132852, guid: ac53f9d05b915884ab3ce6d0a7113315,
+    type: 3}
+  m_PrefabInstance: {fileID: 7219843354929674617}
+  m_PrefabAsset: {fileID: 0}
+--- !u!65 &6063258310767814802
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7219843354929807245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.079529166, y: 1.272976, z: 0.12100246}
+  m_Center: {x: 0.00000013513096, y: 0.4332201, z: 0.0000005418823}

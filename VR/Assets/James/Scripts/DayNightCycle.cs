@@ -76,6 +76,9 @@ public class DayNightCycle : MonoBehaviour
         {
             GameManager.instance.DayCount += 1;
             GameManager.instance.ChangeDay();
+            DifficultManager.instance.onNight = false;
+            DifficultManager.instance.difficultLevel = dayCount;
+            DifficultManager.instance.ChangeDifficult();
             timeOfDay = 5.11f;
         }
         else if (timeOfDay < 15)
@@ -89,6 +92,7 @@ public class DayNightCycle : MonoBehaviour
         else if (timeOfDay < 24)
         {
             sunRotationSpeed = nightSpeed;
+            DifficultManager.instance.onNight = true;
         }
     }
 

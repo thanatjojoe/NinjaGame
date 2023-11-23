@@ -18,6 +18,9 @@ public class GameManager : MonoBehaviour
     {
         //test game over
         //GameOver();
+        
+        DifficultManager.instance.difficultLevel = dayCount;
+        DifficultManager.instance.ChangeDifficult();
     }
 
     public bool IsGameOver
