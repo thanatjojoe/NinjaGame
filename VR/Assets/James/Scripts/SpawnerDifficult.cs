@@ -10,12 +10,13 @@ public class SpawnerDifficult : MonoBehaviour
 {
     private DifficultManager _difficultManager;
     private bool onSpawn;
-    private int beforeRandNumber;
+    private int beforeRandNumber = 1;
     
 
     private void Awake()
     {
         _difficultManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<DifficultManager>();
+        
     }
 
     private void Update()
@@ -34,6 +35,7 @@ public class SpawnerDifficult : MonoBehaviour
     IEnumerator SpawnEnemy()
     {
         onSpawn = true;
+        yield return new WaitForSeconds(Random.Range(1, 5));
         if (!_difficultManager.onNight)
         {
             Instantiate(_difficultManager.dayEnemy[RandomDayEnemy()],transform.position,Quaternion.identity);

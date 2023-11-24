@@ -1933,6 +1933,7 @@ GameObject:
   - component: {fileID: 7305083866677772655}
   - component: {fileID: 7305083866677772642}
   - component: {fileID: 7305083866677772643}
+  - component: {fileID: 8319381678038807844}
   m_Layer: 0
   m_Name: CloseNinja
   m_TagString: Enemy
@@ -2070,6 +2071,18 @@ SphereCollider:
   serializedVersion: 2
   m_Radius: 2
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &8319381678038807844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7220649448837465042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f824cedd3a8854140a2847b5b66c43f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7220652415617873332
 GameObject:
   m_ObjectHideFlags: 0

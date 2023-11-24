@@ -3525,6 +3525,7 @@ GameObject:
   - component: {fileID: 318052161794061555}
   - component: {fileID: 318052161794061554}
   - component: {fileID: 8360731446102066296}
+  - component: {fileID: -2827258191843485820}
   m_Layer: 0
   m_Name: SekeletonTank
   m_TagString: Untagged
@@ -3679,6 +3680,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a42899f785a31b438924321a987bb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &-2827258191843485820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 318052161793715649}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f824cedd3a8854140a2847b5b66c43f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &318052161793716227

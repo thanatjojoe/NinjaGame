@@ -1382,6 +1382,7 @@ GameObject:
   - component: {fileID: 5088807337382266969}
   - component: {fileID: 5088807337382266970}
   - component: {fileID: 388377241741532912}
+  - component: {fileID: 4328004357753849084}
   m_Layer: 0
   m_Name: SkeletonWarrior
   m_TagString: Enemy
@@ -1537,6 +1538,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 9a42899f785a31b438924321a987bb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &4328004357753849084
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5088807337389549691}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f824cedd3a8854140a2847b5b66c43f1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &5088807337389551605
@@ -4997,4 +5010,3 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e0ca732b63e569438f9e239aed85494, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _ninjaEnemy: {fileID: 0}

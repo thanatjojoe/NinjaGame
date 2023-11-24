@@ -17,14 +17,13 @@ public class TankEnemy : MonoBehaviour
     private bool onAttack;
     private bool onPlayer;
     
-    private Rigidbody _rigidbody;
     private Animator _animator;
     private NavMeshAgent _agent;
     private Transform playerTransform;
     
     private void Awake()
     {
-        _rigidbody = GetComponent<Rigidbody>();
+        
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
         detectCollider = GetComponent<SphereCollider>();
@@ -71,27 +70,7 @@ public class TankEnemy : MonoBehaviour
         }
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.collider.CompareTag("HitObject"))
-        {
-            Dead();
-        }
-    }
-
-    private void Dead()
-    {
-        _rigidbody.isKinematic = false;
-        _animator.enabled = false;
-        _agent.enabled = false;
-        StartCoroutine(DestoryTime());
-    }
-
-    IEnumerator DestoryTime()
-    {
-        yield return new WaitForSeconds(5f);
-        Destroy(gameObject);
-    }
+    
 
     IEnumerator Attack()
     {
