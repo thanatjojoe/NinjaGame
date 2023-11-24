@@ -25,23 +25,31 @@ public class NinjaEnemy : MonoBehaviour
     private Animator _animator;
     private NavMeshAgent _agent;
     private Transform playerTransform;
+    private EnemyHP _enemyHp;
+    
     
     private void Awake()
     {
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+        _enemyHp = GetComponent<EnemyHP>();
         detectCollider = GetComponent<SphereCollider>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     private void Update()
     {
 
-        if (!GameManager.instance.IsGameOver)
+        if (!GameManager.instance.IsGameOver && !_enemyHp.isDead)
         {
             AttackMode();
         }
-        
-        
+        else
+        {
+            _agent.enabled = false;
+        }
+
+
+
 
     }
 
@@ -66,11 +74,12 @@ public class NinjaEnemy : MonoBehaviour
         }
         else
         {
-            if (!onAttack)
+            if (!onAttack && !GameManager.instance.IsGameOver)
             {
                 _animator.SetBool("Run",true);
                 _agent.SetDestination(playerTransform.position);
             }
+            
         }
     }
 

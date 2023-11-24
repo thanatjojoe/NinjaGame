@@ -9,11 +9,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: 8ceced44a9006d84caf8e9b647143dd3, type: 3}
       propertyPath: m_Name
-      value: Shuriken
+      value: Shuriken Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: 8ceced44a9006d84caf8e9b647143dd3, type: 3}
       propertyPath: m_TagString
-      value: Weapon
+      value: WeaponPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8ceced44a9006d84caf8e9b647143dd3, type: 3}
       propertyPath: m_RootOrder

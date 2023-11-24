@@ -26,7 +26,11 @@ public class WeaponSword : MonoBehaviour
             Debug.Log("Damage: " + damage);
             if (damage > 2)
             {
-                Destroy(other.gameObject);
+               other.GetComponent<EnemyHP>().Dead();
+            }
+            else
+            {
+                other.GetComponent<EnemyHP>().Stun();
             }
         }
     }

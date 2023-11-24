@@ -19,6 +19,8 @@ public class TankEnemy : MonoBehaviour
     
     private Animator _animator;
     private NavMeshAgent _agent;
+    
+    private EnemyHP _enemyHp;
     private Transform playerTransform;
     
     private void Awake()
@@ -26,18 +28,22 @@ public class TankEnemy : MonoBehaviour
         
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
+        
+        _enemyHp = GetComponent<EnemyHP>();
         detectCollider = GetComponent<SphereCollider>();
         playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
     }
     private void Update()
     {
 
-        if (!GameManager.instance.IsGameOver)
+        if (!GameManager.instance.IsGameOver && !_enemyHp.isDead)
         {
             AttackMode();
         }
-        
-        
+        else
+        {
+            _agent.isStopped = true;
+        }
 
     }
 

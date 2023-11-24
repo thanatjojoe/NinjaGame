@@ -6,9 +6,13 @@ using UnityEngine.AI;
 
 public class EnemyHP : MonoBehaviour
 {
+    private float enemyHp = 5;
     private Rigidbody _rigidbody;
     private Animator _animator;
     private NavMeshAgent _agent;
+    public bool isDead;
+    private bool onStun;
+    
 
     private void Start()
     {
@@ -17,20 +21,37 @@ public class EnemyHP : MonoBehaviour
         _agent = GetComponent<NavMeshAgent>();
     }
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("WeaponPlayer"))
         {
             Dead();
         }
-    }
+    }*/
 
-    private void Dead()
+    public void Dead()
     {
         _rigidbody.isKinematic = false;
         _animator.enabled = false;
         _agent.enabled = false;
+        isDead = true;
         StartCoroutine(DestoryTime());
+    }
+
+    public void Stun()
+    {
+        if (!onStun)
+        {
+            StartCoroutine(EnemyStun());
+        }
+    }
+
+    IEnumerator EnemyStun()
+    {
+        onStun = true;
+        Debug.Log("Enemy Stun");
+        yield return new WaitForSeconds(1.5f); //เวลาที่จะติดสตั้น
+        onStun = false;
     }
 
     IEnumerator DestoryTime()

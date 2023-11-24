@@ -40,11 +40,11 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100000, guid: bb071dc282deb6b42b4394f092b17125, type: 3}
       propertyPath: m_Name
-      value: Falchion
+      value: Falchion Variant
       objectReference: {fileID: 0}
     - target: {fileID: 100000, guid: bb071dc282deb6b42b4394f092b17125, type: 3}
       propertyPath: m_TagString
-      value: Weapon
+      value: WeaponPlayer
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: bb071dc282deb6b42b4394f092b17125, type: 3}
       propertyPath: m_RootOrder

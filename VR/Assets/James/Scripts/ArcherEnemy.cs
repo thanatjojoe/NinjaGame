@@ -22,7 +22,9 @@ public class ArcherEnemy : MonoBehaviour
     
     private Animator _animator;
     private NavMeshAgent _agent;
+    private EnemyHP _enemyHp;
     private Transform playerTransform;
+    
     private GameManager _gameManager;
     
     private void Awake()
@@ -30,6 +32,8 @@ public class ArcherEnemy : MonoBehaviour
         _animator = GetComponent<Animator>();
         _agent = GetComponent<NavMeshAgent>();
         detectCollider = GetComponent<SphereCollider>();
+        _enemyHp = GetComponent<EnemyHP>();
+        
         playerTransform = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
         _gameManager    = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
@@ -40,6 +44,10 @@ public class ArcherEnemy : MonoBehaviour
         if (!GameManager.instance.IsGameOver)
         {
             AttackMode();
+        }
+        else
+        {
+            _agent.enabled = false;
         }
     }
 
@@ -70,10 +78,7 @@ public class ArcherEnemy : MonoBehaviour
                 _animator.SetBool("Run",true);
                 _agent.SetDestination(playerTransform.position);
             }
-            else
-            {
-                _agent.isStopped = true;
-            }
+            
         }
     }
 
