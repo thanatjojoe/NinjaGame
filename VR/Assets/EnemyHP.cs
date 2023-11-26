@@ -12,6 +12,7 @@ public class EnemyHP : MonoBehaviour
     private NavMeshAgent _agent;
     public bool isDead;
     private bool onStun;
+    public Transform soulPoint;
     
 
     private void Start()
@@ -35,6 +36,7 @@ public class EnemyHP : MonoBehaviour
         _animator.enabled = false;
         _agent.enabled = false;
         isDead = true;
+        Instantiate(soulPoint, transform.position, Quaternion.identity);
         StartCoroutine(DestoryTime());
     }
 

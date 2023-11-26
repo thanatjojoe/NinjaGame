@@ -11,8 +11,11 @@ public class GameManager : MonoBehaviour
 
     [SerializeField] private int dayCount = 1;
     [SerializeField] private TextAnimator_TMP dayText;
-
+    [SerializeField] private TextAnimator_TMP soulText; 
+    [SerializeField] private int soulPoint;
+    private float soulPointCounter;
     private bool isGameOver;
+    public bool onShop;
 
     private void Start()
     {
@@ -21,6 +24,56 @@ public class GameManager : MonoBehaviour
         
         DifficultManager.instance.difficultLevel = dayCount;
         DifficultManager.instance.ChangeDifficult();
+    }
+
+    private void Update()
+    {
+        SoulPointCalculate();
+    }
+
+    private void SoulPointCalculate()
+    {
+        if (onShop)
+        {
+            if (soulPoint > 0)
+            {
+                SoulShop.instance.AddSoul(soulPoint);
+                soulPoint = 0;
+            }
+            
+            if (soulPointCounter > soulPoint)
+            {
+                onShop = true;
+                soulPointCounter -= 100 * Time.deltaTime;
+            }
+            else
+            {
+                soulPointCounter = soulPoint;
+                onShop = false;
+            }
+        }
+        else
+        {
+            if (soulPointCounter < soulPoint)
+            {
+                soulPointCounter += 100 * Time.deltaTime;
+            }
+            else
+            {
+                soulPointCounter = soulPoint;
+            }
+        }
+        soulText.SetText(Convert.ToInt32(soulPointCounter).ToString());
+    }
+
+    public void IncreaseSoul(int soulIncrease)
+    {
+        soulPoint += soulIncrease;
+    }
+
+    public void DecreaseSoul(int soulDecrease)
+    {
+        soulPoint -= soulDecrease;
     }
 
     public bool IsGameOver
@@ -33,6 +86,8 @@ public class GameManager : MonoBehaviour
         isGameOver = true;
         StartCoroutine(GameIsOver());
     }
+
+    
 
     IEnumerator GameIsOver()
     {

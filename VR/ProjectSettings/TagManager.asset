@@ -8,6 +8,9 @@ TagManager:
   - Enemy
   - Weapon
   - WeaponPlayer
+  - Soul
+  - Hand
+  - DestroyBox
   layers:
   - Default
   - TransparentFX

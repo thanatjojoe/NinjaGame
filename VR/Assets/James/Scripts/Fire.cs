@@ -7,7 +7,7 @@ public class Fire : MonoBehaviour
 {
     [SerializeField] private ParticleSystem fireFX;
     [SerializeField] private Light fireLight;
-    [SerializeField] private float fireTime;
+    public float fireTime;
 
     private void Update()
     {
