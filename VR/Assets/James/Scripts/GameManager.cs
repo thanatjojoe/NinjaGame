@@ -85,6 +85,7 @@ public class GameManager : MonoBehaviour
     {
         isGameOver = true;
         StartCoroutine(GameIsOver());
+        
     }
 
     
@@ -94,6 +95,7 @@ public class GameManager : MonoBehaviour
         //show game over canvas
         yield return new WaitForSeconds(5f);
         Debug.Log("Game Over");
+        SceneTransitionManager.instance.GoToSceneAsync(0);
     }
     public int DayCount
     {

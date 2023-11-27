@@ -7,19 +7,28 @@ using UnityEngine.UI;
 public class Player : MonoBehaviour
 {
     public static event System.Action OnCollisionWithEnemy;
-    public static int playerHP = 100;
+    public int playerHP = 100;
 
     public Image healthImage;
     private GameManager _gameManager;
+    public bool isMenu;
 
     private void Start()
     {
-        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        if (!isMenu)
+        {
+            _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        }
+        
     }
 
     void Update()
     {
-        UpdateHealthImage();
+        if (!isMenu)
+        {
+            UpdateHealthImage();
+            UpdateHp(); 
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -34,7 +43,7 @@ public class Player : MonoBehaviour
 
     void UpdateHp()
     {
-        if (playerHP < 0)
+        if (playerHP < 0 && !_gameManager.IsGameOver)
         {
             _gameManager.GameOver();
         }
@@ -56,5 +65,11 @@ public class Player : MonoBehaviour
             healthImage.color = darkenedColor;
             
         }
+    }
+
+    void UpdateHealthScreen()
+    {
+        float healthScreen = (playerHP - 355) * -1;
+        Debug.Log(healthScreen);
     }
 }

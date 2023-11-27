@@ -21,7 +21,7 @@ public class DamageToPlayer : MonoBehaviour
     
     void damageToPlayer()
     {
-        Player.playerHP = Player.playerHP - enemyDmg;
+        //Player.playerHP = Player.playerHP - enemyDmg;
     }
 
     private void OnEnable()
