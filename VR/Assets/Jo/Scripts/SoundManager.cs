@@ -31,12 +31,14 @@ public class SoundManager : MonoBehaviour
     public enum SoundName
     {
         Slash,
+        BG,
+        enemyHurt
         
         
     }
     void Start()
     {
-        //Play(SoundName.BG);
+        Play(SoundName.BG);
     }
     private void Awake()
     {

@@ -9,28 +9,23 @@ public class WeaponTrail : MonoBehaviour
     private const int NUM_VERTICES = 12;
 
     [SerializeField]
-    [Tooltip("The blade object")]
     private GameObject _blade = null;
      
     [SerializeField]
-    [Tooltip("The empty game object located at the tip of the blade")]
     private GameObject _tip = null;
 
     [SerializeField]
-    [Tooltip("The empty game object located at the base of the blade")]
     private GameObject _base = null;
 
     [SerializeField]
-    [Tooltip("The mesh object with the mesh filter and mesh renderer")]
     private GameObject _meshParent = null;
 
     [SerializeField]
-    [Tooltip("The number of frame that the trail should be rendered for")]
+    
     private int _trailFrameLength = 3;
 
     [SerializeField]
     [ColorUsage(true, true)]
-    [Tooltip("The colour of the blade and trail")]
     private Color _colour = Color.red;
     
 

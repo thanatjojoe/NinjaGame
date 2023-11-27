@@ -26,6 +26,7 @@ public class WeaponSword : MonoBehaviour
             Debug.Log("Damage: " + damage);
             if (damage > 2)
             {
+                SoundManager.instance.Play(SoundManager.SoundName.enemyHurt);
                other.GetComponent<EnemyHP>().Dead();
             }
             else
@@ -38,6 +39,7 @@ public class WeaponSword : MonoBehaviour
             
             float swordSpeed = CalculateSwordSpeed(); 
             float damage = swordSpeed * damageMultiplier;
+            Debug.Log("Damage: " + damage);
 
             if (damage > 2)
             {
