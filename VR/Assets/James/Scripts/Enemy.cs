@@ -5,7 +5,6 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
-    public int objectHp;
     private MeshDestroy _meshDestroy;
 
     private void OnEnable()
@@ -15,17 +14,10 @@ public class Enemy : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (collision.gameObject.CompareTag("HitObject"))
+        if (collision.gameObject.CompareTag("WeaponPlayer"))
         {
-            if (objectHp > 0)
-            {
-                objectHp -= 1;
-            }
-            else
-            {
-                _meshDestroy.DestroyMesh();
-                _meshDestroy.enabled = false;
-            }
+            _meshDestroy.DestroyMesh();
+            _meshDestroy.enabled = false;
         }
     }
 
