@@ -559,7 +559,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_System: {fileID: 3006008561134797574}
-  m_TurnSpeed: 70
+  m_TurnSpeed: 40
   m_LeftHandTurnAction:
     m_UseReference: 0
     m_Action:
@@ -626,8 +626,8 @@ CharacterController:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Height: 4
-  m_Radius: 0.18
+  m_Height: 1.79
+  m_Radius: 0.22
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -983,7 +983,7 @@ GameObject:
   - component: {fileID: 3006008561719902286}
   m_Layer: 0
   m_Name: 'LeftHand '
-  m_TagString: Hand
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

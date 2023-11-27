@@ -33,6 +33,18 @@ public class WeaponSword : MonoBehaviour
                 other.GetComponent<EnemyHP>().Stun();
             }
         }
+        if (other.gameObject.tag == "Player")
+        {
+            
+            float swordSpeed = CalculateSwordSpeed(); 
+            float damage = swordSpeed * damageMultiplier;
+
+            if (damage > 2)
+            {
+              SoundManager.instance.Play(SoundManager.SoundName.Slash);
+            }
+            
+        }
     }
 
     private float CalculateSwordSpeed()
