@@ -39,6 +39,8 @@ public class ArrowPlayer : MonoBehaviour
         Vector3 force = transform.forward * value * speed;
         _rigidbody.AddForce(force, ForceMode.Impulse);
 
+        StartCoroutine(RotateWithVelocity());
+
     }
 
     private void Stop()
@@ -63,7 +65,7 @@ public class ArrowPlayer : MonoBehaviour
                 transform.parent = hitInfo.transform;
                 body.AddForce(_rigidbody.velocity, ForceMode.Impulse);
             }
-            
+            //Stop();
             
         }
     }
