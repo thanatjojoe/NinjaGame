@@ -41,4 +41,9 @@ public class SceneTransitionManager : MonoBehaviour
 
         operation.allowSceneActivation = true;
     }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }

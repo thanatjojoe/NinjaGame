@@ -32,6 +32,11 @@ public class GameManager : MonoBehaviour
     private void Update()
     {
         SoulPointCalculate();
+
+        if (dayCount > MenuManager.instance.highScore)
+        {
+            MenuManager.instance.highScore = dayCount;
+        }
     }
 
     private void SoulPointCalculate()
