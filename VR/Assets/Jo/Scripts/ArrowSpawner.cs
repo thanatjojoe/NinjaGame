@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
@@ -11,6 +12,7 @@ public class ArrowSpawner : MonoBehaviour
     private XRGrabInteractable _bow;
     private bool arrowNotched = false;
     private GameObject currentArrow = null;
+    public TextMeshProUGUI arrowCount;
 
     public int totalArrow = 10;
     
@@ -29,6 +31,7 @@ public class ArrowSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        arrowCount.text = totalArrow.ToString();
         if (_bow.isSelected && arrowNotched == false && totalArrow > 0)
         {
             totalArrow--;
