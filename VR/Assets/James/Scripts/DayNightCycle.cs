@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class DayNightCycle : MonoBehaviour
 {
@@ -21,6 +22,8 @@ public class DayNightCycle : MonoBehaviour
     [SerializeField] private Gradient skyColor;
     [SerializeField] private Gradient equatorColor;
     [SerializeField] private Gradient sunColor;
+    public GameObject rain;
+    public bool isRain;
 
 
     private void Start()
@@ -74,11 +77,17 @@ public class DayNightCycle : MonoBehaviour
         }
         else if (timeOfDay < 5.1f)
         {
+            if (isRain)
+            {
+                rain.SetActive(false);
+                isRain = false;
+            }
             GameManager.instance.DayCount += 1;
             GameManager.instance.ChangeDay();
             DifficultManager.instance.onNight = false;
             DifficultManager.instance.difficultLevel = dayCount;
             DifficultManager.instance.ChangeDifficult();
+            RandomRainSpawn();
             timeOfDay = 5.11f;
         }
         else if (timeOfDay < 15)
@@ -95,6 +104,17 @@ public class DayNightCycle : MonoBehaviour
             DifficultManager.instance.onNight = true;
         }
     }
+
+    private void RandomRainSpawn()
+    {
+        var rand = Random.Range(0.1f, 1f);
+        if (rand >= 0.7)
+        {
+            rain.SetActive(true);
+            isRain = true;
+        }
+    }
+    
 
     private void ChangeDifficult()
     {
