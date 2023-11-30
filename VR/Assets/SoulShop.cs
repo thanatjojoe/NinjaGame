@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using Febucci.UI;
+using TMPro;
 using UnityEngine;
 
 public class SoulShop : MonoBehaviour
@@ -11,6 +12,7 @@ public class SoulShop : MonoBehaviour
     [SerializeField] private TextAnimator_TMP soulText;
     [SerializeField] private Fire _fire;
     private float soulPointCounter;
+    public Transform dropPosition;
 
     public int PointInShop
     {
@@ -49,6 +51,18 @@ public class SoulShop : MonoBehaviour
     {
         pointInShop += soul;
     }
+
+    public void BuyItem(Transform item, int prise)
+    {
+        if (pointInShop >= prise)
+        {
+            Instantiate(item, dropPosition.position, Quaternion.identity);
+            pointInShop -= prise;
+        }
+        
+    }
+
+    
 
     private void OnTriggerEnter(Collider other)
     {

@@ -111,7 +111,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fe91688f1e4174ca83255b730bf86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectHp: 5
 --- !u!1 &318052161793622573
 GameObject:
   m_ObjectHideFlags: 0
@@ -3528,7 +3527,7 @@ GameObject:
   - component: {fileID: -2827258191843485820}
   m_Layer: 0
   m_Name: SekeletonTank
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5127,7 +5126,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60fe91688f1e4174ca83255b730bf86c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectHp: 3
 --- !u!65 &1858290695
 BoxCollider:
   m_ObjectHideFlags: 0
