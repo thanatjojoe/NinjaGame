@@ -55,4 +55,9 @@ public class ArrowSpawner : MonoBehaviour
         yield return new WaitForSeconds(1f);
         currentArrow = Instantiate(arrow, notch.transform);
     }
+
+    public void IncreaseArrow()
+    {
+        totalArrow += 1;
+    }
 }

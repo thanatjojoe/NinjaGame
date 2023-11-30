@@ -11,6 +11,10 @@ TagManager:
   - Soul
   - Hand
   - DestroyBox
+  - RoomLight
+  - SamplesInfoPanel
+  - Bow
+  - Stick
   layers:
   - Default
   - TransparentFX

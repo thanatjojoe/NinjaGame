@@ -14,6 +14,13 @@ public class SoulShop : MonoBehaviour
     private float soulPointCounter;
     public Transform dropPosition;
 
+    private int arrowPrise;
+    private int campFirePrise;
+    private int shurikanPrise;
+    
+    public Transform stick;
+    public Transform shuriken;
+
     public int PointInShop
     {
         get { return pointInShop; }
@@ -52,14 +59,32 @@ public class SoulShop : MonoBehaviour
         pointInShop += soul;
     }
 
-    public void BuyItem(Transform item, int prise)
+    public void BuyStickItem()
     {
-        if (pointInShop >= prise)
+        if (pointInShop >= campFirePrise)
         {
-            Instantiate(item, dropPosition.position, Quaternion.identity);
-            pointInShop -= prise;
+            Instantiate(stick, dropPosition.position, Quaternion.identity);
+            pointInShop -= campFirePrise;
         }
-        
+    }
+    
+    public void BuyShurikanItem()
+    {
+        if (pointInShop >= shurikanPrise)
+        {
+            Instantiate(shuriken, dropPosition.position, Quaternion.identity);
+            pointInShop -= shurikanPrise;
+        }
+    }
+
+    public void BuyArrow()
+    {
+        if (pointInShop >= arrowPrise)
+        {
+            ArrowSpawner arrowSpawner = GameObject.FindGameObjectWithTag("Bow").GetComponent<ArrowSpawner>();
+            arrowSpawner.IncreaseArrow();
+            pointInShop -= arrowPrise;
+        }
     }
 
     

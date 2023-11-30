@@ -6,10 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/FX/FX_Materials/Water_FX.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Asset/PolygonNature/FX/FX_Materials/Water_FX.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefeb/Enemy/SekeletonTank.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefeb/Enemy/SekeletonTank.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/Fire.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/Fire.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/Prefab/Bow Completed.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/Prefab/Bow Completed.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Jo/Scripts/ArrowSpawner.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Jo/Scripts/ArrowSpawner.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/SoulShop.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SoulShop.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +100,7 @@
       <workItem from="1700793066169" duration="3625000" />
       <workItem from="1700922292628" duration="3968000" />
       <workItem from="1700979020073" duration="14868000" />
-      <workItem from="1701363957356" duration="982000" />
+      <workItem from="1701363957356" duration="4428000" />
     </task>
     <servers />
   </component>

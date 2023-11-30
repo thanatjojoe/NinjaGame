@@ -8,6 +8,7 @@ public class Fire : MonoBehaviour
     [SerializeField] private ParticleSystem fireFX;
     [SerializeField] private Light fireLight;
     public float fireTime;
+    public bool isShop;
 
     private void Update()
     {
@@ -35,6 +36,15 @@ public class Fire : MonoBehaviour
         {
             fireLight.range = 30f;
             fireFX.startSize = 0.3f;
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Stick") && !isShop)
+        {
+            fireTime += 45f;
+            Destroy(other.gameObject);
         }
     }
 }
