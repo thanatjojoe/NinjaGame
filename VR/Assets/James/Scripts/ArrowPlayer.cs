@@ -22,6 +22,7 @@ public class ArrowPlayer : MonoBehaviour
     // Start is called before the first frame update
     private void Awake()
     {
+        
         _rigidbody = GetComponent<Rigidbody>();
 
         _particleSystem = GetComponentInChildren<ParticleSystem>();
@@ -85,7 +86,7 @@ public class ArrowPlayer : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             SoundManager.instance.Play(SoundManager.SoundName.enemyHurt);
-            other.GetComponent<EnemyHP>().Dead();
+            
         }
     }
 

@@ -9,12 +9,12 @@ public class Player : MonoBehaviour
     public static int playerHP = 100;
 
     public Image healthImage;
-    private GameManager _gameManager;
+    
 
     private void Start()
     {
         playerHP = 100;
-        _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
+        
     }
 
     void Update()
@@ -37,7 +37,7 @@ public class Player : MonoBehaviour
     {
         if (playerHP <= 0)
         {
-            _gameManager.GameOver();
+            GameManager.instance.GameOver();
         }
     }
 

@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
             if (soulPointCounter > soulPoint)
             {
                 onShop = true;
-                soulPointCounter -= 100 * Time.deltaTime;
+                soulPointCounter -= 200 * Time.deltaTime;
             }
             else
             {
@@ -64,7 +64,7 @@ public class GameManager : MonoBehaviour
         {
             if (soulPointCounter < soulPoint)
             {
-                soulPointCounter += 100 * Time.deltaTime;
+                soulPointCounter += 200 * Time.deltaTime;
             }
             else
             {

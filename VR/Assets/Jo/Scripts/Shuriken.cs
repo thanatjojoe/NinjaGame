@@ -22,7 +22,7 @@ public class Shuriken : MonoBehaviour
         {
             float swordSpeed = CalculateSpeed();
             float damage = swordSpeed * damageMultiplier;
-            if (damage > 2)
+            if (damage > 0)
             {
                 SoundManager.instance.Play(SoundManager.SoundName.enemyHurt);
                 other.GetComponent<EnemyHP>().Dead();

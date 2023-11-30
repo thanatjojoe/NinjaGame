@@ -38,14 +38,16 @@ public class NinjaEnemy : MonoBehaviour
     }
     private void Update()
     {
-
-        if (!GameManager.instance.IsGameOver && !_enemyHp.isDead)
+        if (!_enemyHp.isDead)
         {
-            AttackMode();
-        }
-        else
-        {
-            _agent.enabled = false;
+            if (!GameManager.instance.IsGameOver && !_enemyHp.isDead)
+            {
+                AttackMode();
+            }
+            else
+            {
+                _agent.enabled = false;
+            }
         }
 
 

@@ -39,16 +39,20 @@ public class ArcherEnemy : MonoBehaviour
     }
     private void Update()
     {
+        if (!_enemyHp.isDead)
+        {
+            if (!GameManager.instance.IsGameOver)
+            {
+                AttackMode();
+            }
+            else
+            {
+                _agent.enabled = false;
+            }
+        }
         detectCollider.radius = detectRadius;
         _agent.stoppingDistance = detectRadius;
-        if (!GameManager.instance.IsGameOver)
-        {
-            AttackMode();
-        }
-        else
-        {
-            _agent.enabled = false;
-        }
+      
     }
 
     private void AttackMode()
