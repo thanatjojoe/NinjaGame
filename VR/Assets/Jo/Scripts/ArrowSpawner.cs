@@ -11,6 +11,8 @@ public class ArrowSpawner : MonoBehaviour
     private XRGrabInteractable _bow;
     private bool arrowNotched = false;
     private GameObject currentArrow = null;
+
+    public static int totalArrow = 0;
     
     // Start is called before the first frame update
     void Start()

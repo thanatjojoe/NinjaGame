@@ -40,19 +40,4 @@ public class Enemy1 : MonoBehaviour
         rigidbody.AddForce(Vector3.up * jumpForce, ForceMode.Impulse);
         rigidbody.AddForce(Vector3.forward * jumpForce, ForceMode.Impulse);
     }
-   
-    void damageToPlayer()
-    {
-        Player.playerHP = Player.playerHP - enemyDmg;
-    }
-
-    private void OnEnable()
-    {
-        Player.OnCollisionWithEnemy += damageToPlayer;
-    }
-    private void OnDisable()
-    {
-        Bounce();
-        Player.OnCollisionWithEnemy -= damageToPlayer;
-    }
 }

@@ -1,29 +1,33 @@
 using UnityEngine;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class SpinObject : MonoBehaviour
+public class SpinObject : XRGrabInteractable
 {
-    public float rotationSpeed = 30f; // ความเร็วในการหมุน
-    
-    private bool spin = false;
-    
+    public float rotationSpeed = 50f;
+    private bool isGrab = false;
+
     void Update()
     {
-        if (spin == true)
+        if (isGrab)
         {
             Rotate();
         }
+        
     }
-    public void Rotate()
+
+    void Rotate()
     {
-        transform.Rotate(Vector3.right, rotationSpeed * Time.deltaTime);
+        
+        transform.Rotate(Vector3.right * rotationSpeed * Time.deltaTime);
     }
-    
-    void OnTriggerEnter(Collider other)
+
+    public void GrabObject()
     {
-        if (other.gameObject.tag == "Player")
-        {
-            spin = true;
-        }
+        isGrab = true;
+    }
+
+    public void NotGrabObject()
+    {
+        isGrab = false;
     }
 }

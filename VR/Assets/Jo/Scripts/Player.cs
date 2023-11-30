@@ -6,7 +6,6 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public static event System.Action OnCollisionWithEnemy;
     public static int playerHP = 100;
 
     public Image healthImage;
@@ -14,27 +13,29 @@ public class Player : MonoBehaviour
 
     private void Start()
     {
+        playerHP = 100;
         _gameManager = GameObject.FindGameObjectWithTag("GameController").GetComponent<GameManager>();
     }
 
     void Update()
     {
         UpdateHealthImage();
+        UpdateHp();
     }
 
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Weapon")
         {
-            //OnCollisionWithEnemy?.Invoke();
             playerHP -= 30;
             Debug.Log(playerHP);
+            SoundManager.instance.Play(SoundManager.SoundName.playerHurt);
         }
     }
 
     void UpdateHp()
     {
-        if (playerHP < 0)
+        if (playerHP <= 0)
         {
             _gameManager.GameOver();
         }

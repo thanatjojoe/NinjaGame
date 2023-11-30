@@ -39,7 +39,7 @@ public class WeaponSword : MonoBehaviour
             
             float swordSpeed = CalculateSwordSpeed(); 
             float damage = swordSpeed * damageMultiplier;
-            Debug.Log("Damage: " + damage);
+           
 
             if (damage > 2)
             {

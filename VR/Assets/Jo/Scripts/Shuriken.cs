@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Shuriken : MonoBehaviour
 {
+    public static float damageMultiplier = 10f;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,11 +16,30 @@ public class Shuriken : MonoBehaviour
     {
         
     }
-    void OnCollisionEnter(Collision other)
+    void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+            float swordSpeed = CalculateSpeed();
+            float damage = swordSpeed * damageMultiplier;
+            if (damage > 2)
+            {
+                SoundManager.instance.Play(SoundManager.SoundName.enemyHurt);
+                other.GetComponent<EnemyHP>().Dead();
+                Destroy(gameObject);
+            }
+            else
+            {
+                other.GetComponent<EnemyHP>().Stun();
+            }
         }
+    }
+    private float CalculateSpeed()
+    {
+        
+        // คำนวณความเร็วของการเหวี่ยงดาบ
+
+        float swordSpeed = Mathf.Abs(OVRInput.GetLocalControllerAngularVelocity(OVRInput.Controller.RTouch).y);
+        return swordSpeed;
     }
 }

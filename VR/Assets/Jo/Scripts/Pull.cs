@@ -30,6 +30,7 @@ public class Pull : XRBaseInteractable
 
     public void Release()
     {
+        SoundManager.instance.Play(SoundManager.SoundName.bowShoot);
         PullActionReleased?.Invoke(pullAmount);
         pullingInteractor = null;
         pullAmount = 0f;

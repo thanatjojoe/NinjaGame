@@ -17,20 +17,4 @@ public class DamageToPlayer : MonoBehaviour
     {
         
     }
-    
-    
-    void damageToPlayer()
-    {
-        Player.playerHP = Player.playerHP - enemyDmg;
-    }
-
-    private void OnEnable()
-    {
-        Player.OnCollisionWithEnemy += damageToPlayer;
-        
-    }
-    private void OnDisable()
-    {
-        Player.OnCollisionWithEnemy -= damageToPlayer;
-    }
 }

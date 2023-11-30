@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Febucci.UI;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,12 +17,14 @@ public class GameManager : MonoBehaviour
     private float soulPointCounter;
     private bool isGameOver;
     public bool onShop;
+    public GameObject gameOverText;
 
     private void Start()
     {
-        //test game over
-        //GameOver();
         
+        gameOverText.SetActive(false);
+        dayCount = 1;
+
         DifficultManager.instance.difficultLevel = dayCount;
         DifficultManager.instance.ChangeDifficult();
     }
@@ -83,6 +86,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
+       
         isGameOver = true;
         StartCoroutine(GameIsOver());
     }
@@ -92,7 +96,9 @@ public class GameManager : MonoBehaviour
     IEnumerator GameIsOver()
     {
         //show game over canvas
-        yield return new WaitForSeconds(5f);
+        gameOverText.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        RestartScene();
         Debug.Log("Game Over");
     }
     public int DayCount
@@ -119,5 +125,11 @@ public class GameManager : MonoBehaviour
         dayText.SetText($"<wave a=0.1>DAY {dayCount}");
         yield return new WaitForSeconds(5);
         dayText.SetText($"DAY {dayCount}");
+    }
+    public void RestartScene()
+    {
+        
+        
+        SceneManager.LoadScene("PlayWorld");
     }
 }
