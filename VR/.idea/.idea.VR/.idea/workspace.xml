@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.VR/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Prefeb/Enemy/RangeNinja.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Prefeb/Enemy/RangeNinja.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scene/PlayWorld.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/ArcherEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/ArcherEnemy.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/James/Scripts/GameManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/James/Scripts/GameManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/OpenXR Package Settings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="cd4029b1-7de9-41b7-bace-a30276099b06" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
