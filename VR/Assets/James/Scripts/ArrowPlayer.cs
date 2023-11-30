@@ -15,10 +15,18 @@ public class ArrowPlayer : MonoBehaviour
 
     private Vector3 _lastPosition = Vector3.zero;
 
+
+    private ParticleSystem _particleSystem;
+    private TrailRenderer _trailRenderer;
+
     // Start is called before the first frame update
     private void Awake()
     {
         _rigidbody = GetComponent<Rigidbody>();
+
+        _particleSystem = GetComponentInChildren<ParticleSystem>();
+        _trailRenderer = GetComponentInChildren<TrailRenderer>();
+        
         Pull.PullActionReleased += Release;
 
         Stop();
@@ -40,6 +48,9 @@ public class ArrowPlayer : MonoBehaviour
         _rigidbody.AddForce(force, ForceMode.Impulse);
 
         StartCoroutine(RotateWithVelocity());
+        
+        _particleSystem.Play();
+        _trailRenderer.emitting = true;
 
     }
 

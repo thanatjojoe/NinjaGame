@@ -12,7 +12,7 @@ public class ArrowSpawner : MonoBehaviour
     private bool arrowNotched = false;
     private GameObject currentArrow = null;
 
-    public static int totalArrow = 0;
+    public int totalArrow = 10;
     
     // Start is called before the first frame update
     void Start()
@@ -29,8 +29,10 @@ public class ArrowSpawner : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (_bow.isSelected && arrowNotched == false)
+        if (_bow.isSelected && arrowNotched == false && totalArrow > 0)
         {
+            totalArrow--;
+            Debug.Log("arrow number " +totalArrow);
             arrowNotched = true;
             StartCoroutine("DelayedSpawn");
         }
