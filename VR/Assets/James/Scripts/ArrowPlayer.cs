@@ -86,7 +86,7 @@ public class ArrowPlayer : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
             SoundManager.instance.Play(SoundManager.SoundName.enemyHurt);
-            
+            other.GetComponent<EnemyHP>().Dead();
         }
     }
 
