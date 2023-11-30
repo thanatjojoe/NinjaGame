@@ -39,6 +39,8 @@ public class ArcherEnemy : MonoBehaviour
     }
     private void Update()
     {
+        onPlayer = Physics.CheckSphere(transform.position, detectRadius, playerLayer);
+
         if (!_enemyHp.isDead)
         {
             if (!GameManager.instance.IsGameOver)
@@ -50,8 +52,7 @@ public class ArcherEnemy : MonoBehaviour
                 _agent.enabled = false;
             }
         }
-        detectCollider.radius = detectRadius;
-        _agent.stoppingDistance = detectRadius;
+        
       
     }
 
@@ -108,7 +109,7 @@ public class ArcherEnemy : MonoBehaviour
         arrowObject.SetActive(false);
         Instantiate(arrowPrefab, shootPoint.position, shootPoint.rotation);
     }
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
@@ -122,5 +123,11 @@ public class ArcherEnemy : MonoBehaviour
         {
             onPlayer = false;
         }
+    }*/
+    
+    private void OnDrawGizmosSelected()
+    {
+        Gizmos.color = Color.yellow;
+        Gizmos.DrawWireSphere(transform.position, detectRadius);
     }
 }
