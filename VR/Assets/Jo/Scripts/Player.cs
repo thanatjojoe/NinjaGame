@@ -6,9 +6,13 @@ using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
-    public static int playerHP = 100;
+    public int playerHP = 100;
 
     public Image healthImage;
+
+    private float time;
+    private float timerCounter = 12;
+    private float healthFactor;
     
 
     private void Start()
@@ -21,6 +25,30 @@ public class Player : MonoBehaviour
     {
         UpdateHealthImage();
         UpdateHp();
+        HealingFactor();
+    }
+
+    private void HealingFactor()
+    {
+        if (playerHP < 100)
+        {
+            time += Time.deltaTime;
+            if (time > timerCounter)
+            {
+                healthFactor += 10 * Time.deltaTime;
+                playerHP = Mathf.RoundToInt(healthFactor);
+                if (playerHP > 100)
+                {
+                    playerHP = 100;
+                    time = 0f;
+                }
+            }
+            else
+            {
+                healthFactor = playerHP;
+            }
+            
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -28,6 +56,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.tag == "Weapon")
         {
             playerHP -= 30;
+            time = 0f;
             Debug.Log(playerHP);
             SoundManager.instance.Play(SoundManager.SoundName.playerHurt);
         }
