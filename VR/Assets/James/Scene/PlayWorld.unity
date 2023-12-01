@@ -1470,6 +1470,21 @@ MonoBehaviour:
     volume: 0.1
     loop: 0
     audioSource: {fileID: 121113254}
+  - soundName: 5
+    clip: {fileID: 8300000, guid: d329e6a05a0855c4f8ac8e51d3c8b15a, type: 3}
+    volume: 0.1
+    loop: 0
+    audioSource: {fileID: 121113254}
+  - soundName: 7
+    clip: {fileID: 8300000, guid: 939a2f5013be1434a922917e4637c261, type: 3}
+    volume: 0.1
+    loop: 0
+    audioSource: {fileID: 121113254}
+  - soundName: 8
+    clip: {fileID: 8300000, guid: de1b412c8b2042449959b3574b4c32a9, type: 3}
+    volume: 0.1
+    loop: 0
+    audioSource: {fileID: 121113254}
 --- !u!82 &121113254
 AudioSource:
   m_ObjectHideFlags: 0

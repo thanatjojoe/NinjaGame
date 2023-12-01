@@ -48,7 +48,12 @@ public class SoundManager : MonoBehaviour
         BG,
         enemyHurt,
         playerHurt,
-        bowShoot
+        bowShoot,
+        collectSoul,
+        campFire,
+        gameOver,
+        purchase,
+        waterFall
     }
 
     void Start()

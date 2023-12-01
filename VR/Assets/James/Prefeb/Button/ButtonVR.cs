@@ -21,6 +21,7 @@ public class ButtonVR : MonoBehaviour
     {
         if (!isPressed)
         {
+            SoundManager.instance.Play(SoundManager.SoundName.purchase);
             button.transform.localPosition = new Vector3(0, 0.003f, 0);
             presser = other.gameObject;
             onPress.Invoke();

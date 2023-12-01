@@ -22,6 +22,7 @@ public class SoulBall : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
+            
             GameManager.instance.IncreaseSoul(100);
             Debug.Log("Add Soul");
             Destroy(gameObject);

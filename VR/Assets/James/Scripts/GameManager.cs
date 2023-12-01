@@ -91,7 +91,7 @@ public class GameManager : MonoBehaviour
 
     public void GameOver()
     {
-       
+        SoundManager.instance.Play(SoundManager.SoundName.gameOver);
         isGameOver = true;
         StartCoroutine(GameIsOver());
     }
